@@ -18,8 +18,8 @@ import jakarta.persistence.Table;
         query = "SELECT m FROM Message AS m ORDER BY m.id DESC"
     )
 })//複数件のデータを取得するメソッド（JPQL）
-@Table(name = "messages")
-public class Message {
+@Table(name = "tasks")
+public class Task {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
