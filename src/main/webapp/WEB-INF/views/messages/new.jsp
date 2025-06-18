@@ -7,7 +7,7 @@
 
         <form method="POST" action="${pageContext.request.contextPath}/create">
             <label for="content_msg">メッセージ</label><br /> <input type="text"
-                name="content" id="content_msg" value="${message.content}" /> <br />
+                name="content" id="content_msg" value="${task.content}" /> <br />
             <br /> <input type="hidden" name="_token" value="${_token}" />
             <button type="submit">投稿</button>
         </form>
